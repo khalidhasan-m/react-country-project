@@ -1,5 +1,7 @@
 .countries {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 20px;
+  margin: 20px;
 }

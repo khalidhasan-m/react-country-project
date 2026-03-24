@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Country.css";
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountry }) => {
   const [visited, setVisited] = useState(false);
   // console.log(country);
+
   const handleVisited = () => {
     // system1
     // if (visited) {
@@ -15,7 +16,7 @@ const Country = ({ country }) => {
     // setVisited(visited ? false : true);
     // system3
     setVisited(!visited);
-    
+    handleVisitedCountry(country);
   };
   return (
     <div className={`country ${visited ? "country-visited" : ""}`}>
@@ -29,7 +30,7 @@ const Country = ({ country }) => {
         Area: {country.area.area}{" "}
         {country.area.area > 30000 ? "Big Country" : "Small Country"}
       </p>
-      <button onClick={handleVisited}>
+      <button className="btn" onClick={handleVisited}>
         {visited ? "Visited" : "Not Visited"}
       </button>
     </div>

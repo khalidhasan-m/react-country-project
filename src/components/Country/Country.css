@@ -1,9 +1,29 @@
 .country {
-  border: 1px solid salmon;
-  margin: 20px;
+  border: 3px solid violet;
   padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .country-visited {
   background-color: lightgreen;
+}
+
+.btn {
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+.country h3 {
+  text-align: left;
+}
+.country p {
+  text-align: left;
 }
